@@ -27,7 +27,7 @@ import FormField from 'components/to-be-cleaned/forms/FormField'
 import Panel from 'components/to-be-cleaned/Panel'
 import InformationBox from 'components/ui/InformationBox'
 import { passwordStrength } from 'lib/helpers'
-import PasswordStrenghBar from 'components/ui/PasswordStrenghBar'
+import PasswordStrenghBar from 'components/ui/PasswordStrengthBar'
 
 interface IHomePageStore {
   store: any
