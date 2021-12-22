@@ -17,8 +17,6 @@ import {
   REGIONS,
   REGIONS_DEFAULT,
   DEFAULT_MINIMUM_PASSWORD_STRENGTH,
-  PASSWORD_STRENGTH_COLOR,
-  PASSWORD_STRENGTH_PERCENTAGE,
 } from 'lib/constants'
 
 import { useStore, withAuth } from 'hooks'
@@ -27,7 +25,7 @@ import FormField from 'components/to-be-cleaned/forms/FormField'
 import Panel from 'components/to-be-cleaned/Panel'
 import InformationBox from 'components/ui/InformationBox'
 import { passwordStrength } from 'lib/helpers'
-import PasswordStrenghBar from 'components/ui/PasswordStrengthBar'
+import PasswordStrengthBar from 'components/ui/PasswordStrengthBar'
 
 interface IHomePageStore {
   store: any
@@ -273,7 +271,7 @@ export const Wizard = () => {
                   value={dbPass}
                   onChange={onDbPassChange}
                   description={
-                    <PasswordStrenghBar
+                    <PasswordStrengthBar
                       passwordStrengthScore={passwordStrengthScore}
                       password={dbPass}
                       passwordStrengthMessage={passwordStrengthMessage}
